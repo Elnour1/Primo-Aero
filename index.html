@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>بريمو إيرو | أكاديمية كرة قدم في صباح السالم، الكويت</title>
+  <meta name="description" content="أكاديمية بريمو إيرو لكرة القدم في الكويت. تدريب ناشئين من تحت 6 إلى 16 سنة في ملعب ASAS، صباح السالم. سجّل في الدفعة المؤسسة 2026.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsActivityLocation","name":"أكاديمية بريمو إيرو لكرة القدم","telephone":"+96551772667","address":{"@type":"PostalAddress","streetAddress":"ملعب ASAS، صباح السالم","addressCountry":"KW"}}</script>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Changa:wght@500;800&family=Almarai:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="crest" viewBox="0 0 200 250">
+        <path d="M100 8l5 12 13 .8-10 8 3.5 12.500L100 34l-11.500 7.300 3.500-12.500-10-8 13-.8z" fill="#d4a528"/>
+        <path d="M18 52L100 30l82 22v98c0 40-40 70-82 90C58 220 18 190 18 150z" fill="#d4a528"/>
+        <path d="M30 62l70-19 70 19v88c0 32-32 56-70 74-38-18-70-42-70-74z" fill="#0c2049"/>
+        <text x="100" y="140" text-anchor="middle" font-family="Anton,Impact,sans-serif" font-size="82" fill="#fff">PE</text>
+        <rect x="56" y="152" width="88" height="4" fill="#d4a528"/>
+        <text x="100" y="178" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="14" letter-spacing="4" fill="#d4a528">EST. 2026</text>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="top">
+    <div class="wrap">
+      <a class="mark" href="#"><svg viewBox="0 0 200 250"><use href="#crest"/></svg>PRIMO EROE</a>
+      <div style="display:flex;gap:10px;align-items:center">
+        <span class="pill">التسجيل مفتوح للدفعة المؤسسة</span>
+        <button id="lg" class="lg" type="button" aria-label="Switch language">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="beam a"></div>
+      <div class="beam b"></div>
+      <div class="ghost" aria-hidden="true">PRIMO EROE</div>
+      <div class="turf" aria-hidden="true"></div>
+      <div class="wrap in">
+        <h1>الملعب جاهز.<br><b>ناقص بطلك.</b></h1>
+        <p>أكاديمية بريمو إيرو لكرة القدم تفتح أبوابها في الكويت عام 2026. سجّل اسم ابنك الآن وكن ضمن الدفعة المؤسسة.</p>
+        <a class="btn" href="#card">اصنع كارت البطل</a>
+        <div id="cd" class="cd" hidden></div>
+      </div>
+    </div>
+
+    <section>
+      <div class="wrap nm2">
+        <div class="nmbig" aria-hidden="true">PRIMO<span>EROE</span></div>
+        <div>
+          <h2>الاسم هو الوعد</h2>
+          <p class="sub" style="margin-bottom:0">بريمو إيرو معناها "البطل الأول" بالإيطالية. أكاديمية تأسست في الكويت عام 2026 لتصنع بطلاً في كل لاعب: ثقة في النفس، التزام، وروح فريق قبل أي كأس.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="build" id="card">
+      <div class="wrap">
+        <div>
+          <h2>اصنع كارت بطلك</h2>
+          <p class="sub">اكتب بيانات اللاعب وشوف كارته يتكوّن قدامك، وبضغطة واحدة يوصلنا طلب التسجيل على واتساب.</p>
+          <form id="f">
+            <div class="two">
+              <label>اسم اللاعب<input id="n" maxlength="16" placeholder="مثال: يوسف" required></label>
+              <label>رقم القميص<input id="k" type="number" min="1" max="99" value="10" required></label>
+            </div>
+            <div class="two">
+              <label>المركز
+                <select id="p">
+                  <option value="FWD">مهاجم</option>
+                  <option value="MID">وسط</option>
+                  <option value="DEF">مدافع</option>
+                  <option value="GK">حارس مرمى</option>
+                </select>
+              </label>
+              <label>الفئة العمرية
+                <select id="a">
+                  <option>تحت 6 سنوات</option>
+                  <option>7 – 9 سنوات</option>
+                  <option>10 – 12 سنة</option>
+                  <option>13 – 16 سنة</option>
+                </select>
+              </label>
+            </div>
+            <div class="two">
+              <label>اسم ولي الأمر<input id="g" required autocomplete="name"></label>
+              <label>رقم الهاتف<input id="t" type="tel" inputmode="tel" required autocomplete="tel"></label>
+            </div>
+            <button class="btn" id="subBtn" type="submit">تأكيد التسجيل</button>
+            <div id="msgBox" class="msg-box" hidden>
+              <p id="msgText"></p>
+              <a id="waRedirect" class="btn wa-btn" target="_blank" rel="noopener">إرسال نسخة عبر واتساب</a>
+            </div>
+            <p class="fine">الكارت للمعاينة فقط. التسجيل يتأكد مع إدارة الأكاديمية.</p>
+          </form>
+        </div>
+        <div class="stage">
+          <div class="card">
+            <div class="face">
+              <svg viewBox="0 0 200 250"><use href="#crest"/></svg>
+              <div class="num" id="cn">10</div>
+              <div class="pos" id="cp">FWD</div>
+              <div class="nm" id="cm">اسم اللاعب</div>
+              <div class="ag" id="ca">تحت 6 سنوات · الدفعة المؤسسة</div>
+            </div>
+          </div>
+          <button class="btn dl" type="button" id="dl">حمّل الكارت كصورة</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>اعرف مركزك في الملعب</h2>
+        <p class="sub">اضغط على أي مركز لتعرف دوره وكيف نبني اللاعب فيه.</p>
+        <div class="bd">
+          <div class="pt">
+            <svg viewBox="0 0 160 90" preserveAspectRatio="none" fill="none" stroke="rgba(255,255,255,.55)" stroke-width=".8" aria-hidden="true">
+              <line x1="80" y1="0" x2="80" y2="90"/>
+              <circle cx="80" cy="45" r="13"/>
+              <rect x="0" y="22" width="22" height="46"/>
+              <rect x="138" y="22" width="22" height="46"/>
+            </svg>
+            <button type="button" class="dot on" data-p="GK" style="left:8%" aria-label="حارس مرمى">GK</button>
+            <button type="button" class="dot" data-p="DEF" style="left:30%" aria-label="مدافع">DF</button>
+            <button type="button" class="dot" data-p="MID" style="left:56%" aria-label="لاعب وسط">MF</button>
+            <button type="button" class="dot" data-p="FWD" style="left:84%" aria-label="مهاجم">FW</button>
+          </div>
+          <div class="info" aria-live="polite">
+            <h3 id="pt2"></h3>
+            <p id="pd"></p>
+            <button class="btn" id="pick" type="button">اختر هذا المركز في الكارت</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="paper">
+      <div class="wrap">
+        <h2>رحلة اللاعب عبر الملعب</h2>
+        <p class="sub">من أول لمسة في منطقة الجزاء إلى المرمى الآخر. كل مرحلة عمرية لها هدفها.</p>
+        <div class="path">
+          <div class="z"><i>U6</i><h3>اللعب والحب</h3><p>التعرف على الكرة بالألعاب والحركة، وبناء حب الرياضة.</p></div>
+          <div class="z"><i>7–9</i><h3>الأساسيات</h3><p>التحكم والتمرير والتسديد، مع مباريات مصغرة.</p></div>
+          <div class="z"><i>10–12</i><h3>المهارة والفهم</h3><p>تطوير المهارة الفردية وفهم المراكز والعمل الجماعي.</p></div>
+          <div class="z"><i>13–16</i><h3>التكتيك والمنافسة</h3><p>تدريب تكتيكي ولياقة ومشاركة في مباريات ودية وبطولات.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>المواعيد والأسعار</h2>
+        <p class="sub">اشتراك شهري موحد لجميع الفئات العمرية، مع زي رياضي صيفي للاعب.</p>
+        <div class="tw">
+          <table>
+            <tr><th>الفئة</th><th>أيام التدريب</th><th>الوقت</th><th>الاشتراك الشهري</th></tr>
+            <tr><td>تحت 6 سنوات</td><td>سبت – ثلاثاء</td><td>4:00 – 5:00 م</td><td>50 د.ك</td></tr>
+            <tr><td>7 – 9 سنوات</td><td>أحد – أربعاء</td><td>4:00 – 5:30 م</td><td>50 د.ك</td></tr>
+            <tr><td>10 – 12 سنة</td><td>أحد – أربعاء</td><td>5:30 – 7:00 م</td><td>50 د.ك</td></tr>
+            <tr><td>13 – 16 سنة</td><td>اثنين – خميس</td><td>5:30 – 7:00 م</td><td>50 د.ك</td></tr>
+          </table>
+        </div>
+        <div class="fees">
+          <div><b>50 <span style="font-size:20px;font-family:'Changa',sans-serif">د.ك</span></b><small>الاشتراك الشهري</small></div>
+          <div><b>10 <span style="font-size:20px;font-family:'Changa',sans-serif">د.ك</span></b><small>الزي الرياضي الصيفي</small></div>
+        </div>
+
+        <h2 style="margin-top:80px">الجهاز الفني</h2>
+        <div class="coach">
+          <div><h3>الكابتن عمرو</h3><p>Coach AMRO</p></div>
+          <div><h3>الكابتن أحمد</h3><p>Coach AHMED</p></div>
+          <div><h3>الكابتن إسلام</h3><p>Coach ESLAM</p></div>
+          <div><h3>الكابتن سيد</h3><p>Coach SAYED</p></div>
+        </div>
+
+        <h2 style="margin-top:80px">أسئلة الأهالي</h2>
+        <div style="margin-top:20px">
+          <details><summary>كيف أسجل ابني؟</summary><p>املأ بيانات اللاعب في قسم "اصنع كارت بطلك" واضغط تسجيل، وسيصلنا طلبك على واتساب ونتواصل معك لتأكيد التفاصيل.</p></details>
+          <details><summary>ما الفئات العمرية المتاحة؟</summary><p>من تحت 6 سنوات حتى 16 سنة، في أربع فئات: تحت 6، ومن 7 إلى 9، ومن 10 إلى 12، ومن 13 إلى 16.</p></details>
+          <details><summary>متى تبدأ التدريبات؟</summary><p>الأكاديمية تحت الإنشاء حالياً، وسنعلن موعد انطلاق الدفعة المؤسسة لمن سجّل أولاً بأول.</p></details>
+          <details><summary>كم تبلغ الرسوم؟</summary><p>الاشتراك الشهري 50 د.ك لجميع الفئات، والزي الرياضي الصيفي 10 د.ك.</p></details>
+          <details><summary>كيف أتواصل مع الإدارة؟</summary><p>عبر واتساب الأكاديمية الموضح في قسم التواصل.</p></details>
+        </div>
+
+        <h2 style="margin-top:80px">تواصل معنا</h2>
+        <div class="contact">
+          <div><b>الهاتف / واتساب</b><small><a href="https://wa.me/96551772667" style="color:inherit"><bdi>+965 5177 2667</bdi></a></small></div>
+          <div><b>الملعب</b><small>ملعب ASAS، صباح السالم، الكويت</small></div>
+          <div><b>انستجرام</b><small><bdi>@Primo_eroe_Academy</bdi></small></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="wa" href="https://wa.me/96551772667" target="_blank" rel="noopener">تواصل واتساب</a>
+  <footer>© 2026 أكاديمية بريمو إيرو لكرة القدم، الكويت</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
